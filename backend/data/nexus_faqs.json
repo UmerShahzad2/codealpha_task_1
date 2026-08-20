@@ -1,0 +1,122 @@
+[
+  {
+    "question": "Hello! What can you help me with?",
+    "answer": "Hello! I am FAQMind, your intelligent AI platform assistant. I can help answer questions about Nexus AI Lab, LinguaFlow translation, VisionTrack object detection, platform setup, and CodeAlpha internship details.",
+    "category": "General",
+    "keywords": "hello hi greetings assistance help intro"
+  },
+  {
+    "question": "What is Nexus AI Lab?",
+    "answer": "Nexus AI Lab is a unified enterprise artificial intelligence platform combining multilingual translation (LinguaFlow), intelligent FAQ automation (FAQMind), and real-time computer vision tracking (VisionTrack) into a single cohesive workspace.",
+    "category": "General",
+    "keywords": "nexus ai lab platform overview features unified"
+  },
+  {
+    "question": "How do I get started with Nexus AI Lab?",
+    "answer": "You can get started by selecting your desired AI module from the sidebar: LinguaFlow for language translation, FAQMind for intelligent assistance, or VisionTrack for video object analytics.",
+    "category": "General",
+    "keywords": "get started quickstart launch navigation setup"
+  },
+  {
+    "question": "Who created Nexus AI Lab and is it for CodeAlpha?",
+    "answer": "Nexus AI Lab was designed and developed specifically for the CodeAlpha Artificial Intelligence Internship project suite, adhering to all official task requirements.",
+    "category": "General",
+    "keywords": "codealpha internship creator author submission project"
+  },
+  {
+    "question": "What languages does LinguaFlow support?",
+    "answer": "LinguaFlow supports over 30 global languages including English, Spanish, French, German, Italian, Portuguese, Chinese, Japanese, Korean, Arabic, Hindi, Russian, and more with auto-detection capabilities.",
+    "category": "LinguaFlow",
+    "keywords": "lingua flow languages translation auto detect supported"
+  },
+  {
+    "question": "How do I translate text in LinguaFlow?",
+    "answer": "To translate text, type or paste your text into the source text area, select your target language from the dropdown, and click 'Translate Now' or press Ctrl + Enter.",
+    "category": "LinguaFlow",
+    "keywords": "translate text input how to use linguaflow"
+  },
+  {
+    "question": "How does automatic language detection work in LinguaFlow?",
+    "answer": "LinguaFlow uses an intelligent NLP language identification pipeline to analyze text structure, character n-grams, and word frequencies to determine the source language automatically.",
+    "category": "LinguaFlow",
+    "keywords": "auto detection source language n-gram nlp"
+  },
+  {
+    "question": "Can I export translation history from LinguaFlow?",
+    "answer": "Yes, LinguaFlow allows you to copy translated outputs to clipboard, search through previous translations, and export translation sessions as text (.txt) files.",
+    "category": "LinguaFlow",
+    "keywords": "export translation history copy download txt"
+  },
+  {
+    "question": "Does LinguaFlow support speech input and voice playback?",
+    "answer": "Yes, LinguaFlow integrates browser-native Speech-to-Text for voice input and Text-to-Speech synthesis with BCP-47 language voice matching for accurate audio playback.",
+    "category": "LinguaFlow",
+    "keywords": "speech to text text to speech voice mic audio playback pronunciation"
+  },
+  {
+    "question": "How does the FAQMind chatbot answer questions?",
+    "answer": "FAQMind cleans and tokenizes user input, generates TF-IDF feature vectors, and computes cosine similarity against our knowledge base to deliver accurate responses with confidence scores.",
+    "category": "FAQMind",
+    "keywords": "faqmind chatbot tf-idf cosine similarity matching algorithm"
+  },
+  {
+    "question": "What happens when FAQMind has low confidence in an answer?",
+    "answer": "When the similarity confidence score falls below the configured threshold, FAQMind provides the closest matching answer along with helpful related FAQ topic suggestions.",
+    "category": "FAQMind",
+    "keywords": "low confidence fallback threshold suggestions unknown query"
+  },
+  {
+    "question": "Can administrators add, edit, or delete FAQs in FAQMind?",
+    "answer": "Yes, administrators can use the Knowledge Base Admin tab to add, edit, or delete FAQs. The NLP vector index automatically rebuilds upon any modification.",
+    "category": "FAQMind",
+    "keywords": "admin add edit delete faq management rebuild index"
+  },
+  {
+    "question": "How are unmatched chatbot questions handled?",
+    "answer": "Questions that receive low confidence scores are logged into the Unmatched Queries database table for administrator review and knowledge base expansion.",
+    "category": "FAQMind",
+    "keywords": "unmatched questions analytics logging knowledge base expansion"
+  },
+  {
+    "question": "What computer vision model does VisionTrack use?",
+    "answer": "VisionTrack utilizes pretrained YOLO object detection coupled with an optimized Euclidean centroid object tracking algorithm to provide real-time detection boxes and unique tracking IDs.",
+    "category": "VisionTrack",
+    "keywords": "visiontrack yolo object detection tracking centroid model"
+  },
+  {
+    "question": "Why does object detection detect multiple bounding boxes or objects?",
+    "answer": "Deep learning models analyze full video frames for all trained COCO object classes (people, chairs, cars, laptops, etc.). You can increase the Confidence Threshold slider (e.g. to 60-70%) to filter out background objects.",
+    "category": "VisionTrack",
+    "keywords": "multiple objects bounding box confidence threshold filter accuracy false positive"
+  },
+  {
+    "question": "Can I process video files or use webcam streams in VisionTrack?",
+    "answer": "VisionTrack supports live webcam video streams, uploaded video files (MP4, AVI, WEBM), static images, and a synthetic fallback stream mode when hardware is unavailable.",
+    "category": "VisionTrack",
+    "keywords": "webcam video upload mp4 avi stream synthetic fallback"
+  },
+  {
+    "question": "How are tracking IDs assigned to objects in VisionTrack?",
+    "answer": "VisionTrack computes object bounding box centroids across consecutive frames and uses Euclidean distance minimization to maintain persistent track IDs (#1, #2, etc.).",
+    "category": "VisionTrack",
+    "keywords": "tracking id persistent centroid euclidean distance assignment"
+  },
+  {
+    "question": "Can I adjust the detection confidence threshold in VisionTrack?",
+    "answer": "Yes, VisionTrack features a real-time confidence threshold slider allowing users to tune sensitivity between 10% and 90% on the fly.",
+    "category": "VisionTrack",
+    "keywords": "confidence threshold slider sensitivity adjustment vision"
+  },
+  {
+    "question": "Is my data stored securely in Nexus AI Lab?",
+    "answer": "Yes, all data is stored locally in an isolated SQLite database instance with environment-variable configurable secrets and proper API sanitization.",
+    "category": "API & Security",
+    "keywords": "security privacy local database sqlite secrets environment"
+  },
+  {
+    "question": "What API endpoints are available for integration?",
+    "answer": "Nexus AI Lab provides RESTful FastAPI endpoints for translation, FAQ search, chatbot queries, FAQ CRUD management, detection telemetry, and platform analytics.",
+    "category": "API & Security",
+    "keywords": "api endpoints rest fastapi integration endpoints swagger docs"
+  }
+]

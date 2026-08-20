@@ -1,0 +1,6 @@
+Run Back End:
+.\env\Scripts\python backend\run.py
+
+Run Front End:
+change the  directory according to yours liking
+>> npm run dev
