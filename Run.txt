@@ -1,3 +1,11 @@
+install some libraries:
+cd backend
+pip install -r requirements.txt
+And for frontend:
+cd frontend
+npm install
+
+
 Run Back End:
 .\env\Scripts\python backend\run.py
 
